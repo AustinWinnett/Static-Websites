@@ -1,0 +1,505 @@
+$font-header: 'Satisfy', cursive;
+$font-other: 'Raleway', sans-serif;
+
+body {
+    
+    font-family: $font-other;
+    background: url('../img/symphony.png') repeat;
+    overflow: hidden;
+    
+}
+
+#leftCol {
+    
+    background: rgba(0, 0, 0, .4);
+    height: 100vh;
+    color: white;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#rightCol {
+    
+    /*background-color: #131317;*/
+    height: 100vh;
+    padding: 0 50px;
+    margin: 0;
+    
+    
+}
+
+#leftNav {
+    
+    position: relative;
+    top: 5%;
+    padding: 0 5px;
+
+    
+    li {
+        
+        list-style: none;
+        text-align: center;
+        font-size: 5em;
+        cursor: pointer;
+        margin: 0;
+        height: 150px
+        
+    }
+    
+    li:hover {
+        
+        color: #d0d0d0;
+        
+    }
+    
+    .break {
+        
+        font-size: .2em;
+        
+    }
+    
+    .desc {
+        
+        font-size: .2em;
+        display: inline;
+        position: relative;
+        top: -50px;
+        color: white;
+        
+    }
+    
+}
+
+#title {
+    
+    padding-top: 20px;
+    width: 100%;
+    
+    h1 {
+        
+        text-align: right;
+        font-family: $font-header;
+        font-size: 6em;
+        
+    }
+    
+    h2 {
+        
+        text-align: center;
+        font-family: $font-other;
+        font-size: 1.5em;
+        
+    }
+    
+}
+
+#navbar {
+    
+    font-family: $font-header;
+    font-size: 2em;
+    padding-left: 40px;
+    text-align: right;
+    width: 100%;
+    
+    ul {
+        
+        text-align: right;
+        padding: 0;
+        
+    }
+    
+    a {
+        
+        color: inherit;
+        padding: 0;
+        
+    }
+    
+    a:hover {
+        
+        text-decoration: none;
+        
+    }
+    
+    li {
+        
+        display: inline-block;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        cursor: pointer;
+        
+    }
+    
+    li:hover {
+        
+        background: url('../img/TealStroke.png') no-repeat;
+        background-position: center;
+        background-size: 150px 50px;
+    }
+    
+    .active, .active:hover {
+        
+        background: url('../img/PinkStroke.png') no-repeat;
+        background-position: center;
+        background-size: 150px 50px;
+        
+        a {
+            
+            text-decoration: none;
+            
+        }
+        
+    }
+    
+}
+
+#main {
+    
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    
+    h2 {
+        
+        font-family: $font-header;
+        font-size: 5em;
+        padding: 0 0 20px 0;
+        margin: 0 ;
+        transition: 0.5s;
+        
+    }
+    
+    .artBox {
+        
+        width: 100%;
+        height: 500px;
+        background: rgba(0, 0, 0, .1);
+        outline: 1px solid #454545;
+        padding: 20px;
+        border: 10px solid rgba(0, 0, 0, .4);
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 40px;
+        
+    }
+    
+    .about {
+        
+        font-size: 1.5em;
+        display: none;
+        
+    }
+    
+    .contact {
+        
+        font-size: 1.5em;
+        display: none;
+        
+        form {
+            
+            input, textarea {
+                
+                display: block;
+                border-radius: 5px;
+                margin: 10px 0;
+                padding: 5px;
+                width: 75%;
+                
+            }
+            
+            textarea {
+                
+                height: 200px;
+                
+            }
+            
+            .submitBtn {
+                
+                width: 20%;
+                border: none;
+                background: url('../img/TealStroke.png') no-repeat;
+                background-position: center;
+                background-size: 150px 50px;
+                padding: 10px 0;
+                position: relative;
+                font-family: $font-header;
+                
+            }
+            
+            .submitBtn:active, .submitBtn:focus {
+                
+                background: url('../img/PinkStroke.png') no-repeat;
+                background-position: center;
+                background-size: 150px 50px;
+                padding: 10px 20px;
+                border: none;
+                outline: 0;
+                
+            }
+            
+        }
+        
+    }
+    
+    
+    .artItems {
+        
+        .item {
+            
+            margin:15px;
+            border: 5px solid rgba(0, 0, 0, .4);
+            
+        }
+        
+    }
+    
+}
+
+#leftNavMobile {
+    
+    position: relative;
+    top: 5%;
+    padding:  5px;
+    margin: 50px auto;
+    display: none;
+    background: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    height: 80px;
+    
+    li {
+        
+        list-style: none;
+        text-align: center;
+        font-size: 3em;
+        cursor: pointer;
+        padding: 0 40px;
+        margin: 0 40px;
+        height: 100px
+        
+    }
+    
+    li:hover {
+        
+        color: #d0d0d0;
+        
+    }
+    
+    .break {
+        
+        font-size: .05em;
+        
+    }
+    
+    .desc {
+        
+        font-size: .4em;
+        display: inline;
+        position: relative;
+        top: -30px;
+        color: white;
+        
+    }
+    
+}
+
+/* ========= MEDIA QUERIES =========*/
+
+@media screen and (min-width: 768px) and (max-width: 1172px) {
+    
+    #leftNav li {
+        
+        font-size: 3.5em;
+        
+        .desc {
+            
+            font-size: .3em;
+            top: -20px;
+            
+        }
+        
+    }
+    
+}
+
+@media screen and (max-width: 915px) {
+    
+    #leftCol {
+        
+        display: none;
+        
+    }
+    
+    #title, #navbar {
+        
+        text-align: center;
+        
+    }
+    
+    #title h1, #navbar ul {
+        
+        text-align: center;
+        
+    }
+    
+    #navbar li {
+        
+        padding: 0;
+        width: 150px;
+        
+    }
+    
+    #leftNavMobile {
+        
+        display: block;
+        
+        li {
+            
+            display: inline-block;
+            
+        }
+        
+    }
+    
+
+    
+    #rightCol {
+        
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        
+    }
+    
+    #navbar {
+        
+        padding: 0;
+        
+    }
+    
+    .submitBtn {
+                
+        width: 30%;
+
+    }
+    
+    #rightCol {
+        
+        padding: 0 20px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 424px) {
+    
+    #leftNavMobile {
+        
+        margin: 20px auto;
+        display: block;
+        width: 100px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        height: 100px;
+        border-radius: 50%;
+
+        li {
+
+            font-size: 3em;
+            padding: 20px 0px;
+            margin: 0 40px;
+            height: 100px;
+            
+            span {
+                
+                visibility: hidden;
+                
+            }
+
+        }
+        
+    }
+    
+    #leftNavMobile::after {
+        
+        content: "asdfasdfsd>";
+        
+    }
+    
+    #main #artTitle {
+        
+        font-size: 3.5em;
+        
+    }
+    
+    
+    #main .artItems .item {
+        
+        margin: 15px 0;
+        
+    }
+    
+    #main .contact form .submitBtn {
+                
+        width: 50%;
+
+    }
+    
+    #main .contact form input, #main .contact form textarea {
+                
+        width: 100%;
+        font-size: .8em;
+
+    }
+    
+    #main .artBox {
+
+        width: 100%;
+        height: 500px;
+        background: rgba(0, 0, 0, .1);
+        outline: 1px solid #454545;
+        padding: 5px !important;
+        border: 5px solid rgba(0, 0, 0, .4);
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        margin: 0 0 40px 0;
+        
+        
+    }
+    
+}
+
+@media screen and (min-height: 716px) and (max-height: 844px) {
+    
+    #main .artBox {
+        
+        height: 300px;
+        padding: 20px;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        
+    }
+    
+}
+
+@media screen and (max-height: 716px) {
+    
+    #main .artBox {
+        
+        height: 300px;
+        padding: 20px;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        
+    }
+    
+}
