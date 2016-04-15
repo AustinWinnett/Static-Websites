@@ -73,16 +73,30 @@ body {
     
 }
 
+#searchBar {
+    
+    float: left;
+    margin: 20px 20px 20px 0;
+    width: 300px;
+    height: 40px;
+    font-family: $font-other;
+    border-radius: 5px;
+    
+}
+
 #title {
     
     padding-top: 20px;
     width: 100%;
+    display: inline;
     
     h1 {
         
         text-align: right;
         font-family: $font-header;
         font-size: 6em;
+        float: right;
+        padding: 20px 0 0;
         
     }
     
@@ -94,6 +108,8 @@ body {
         
     }
     
+    
+    
 }
 
 #navbar {
@@ -103,11 +119,13 @@ body {
     padding-left: 40px;
     text-align: right;
     width: 100%;
+    display: inline;
     
     ul {
         
         text-align: right;
         padding: 0;
+        float: right;
         
     }
     
@@ -127,7 +145,7 @@ body {
     li {
         
         display: inline-block;
-        padding: 20px;
+        padding: 0 20px;
         width: 200px;
         text-align: center;
         cursor: pointer;
@@ -173,6 +191,28 @@ body {
         
     }
     
+    #artSearch {
+        
+        background: none;
+        border: none;
+        outline: none;
+        moz-box-sizing: border-box;
+        webkit-box-sizing: border-box;
+        line-height: 1;
+        box-sizing: content-box;
+        transition: 0.5s;
+        width: 100%;
+        
+        &:focus {
+            
+            background-color: rgba(0, 0, 0, .1);
+            transition: 0.5s;
+            border-radius: 5px;
+            
+        }
+      
+    }
+    
     .artBox {
         
         width: 100%;
@@ -184,6 +224,7 @@ body {
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
         margin-bottom: 40px;
+        
         
     }
     
@@ -252,6 +293,14 @@ body {
             
             margin:15px;
             border: 5px solid rgba(0, 0, 0, .4);
+            width: auto;
+            height: 150px;
+            
+            &:hover {
+                
+                border: 5px solid rgba(0, 0, 0, .8);
+                
+            }
             
         }
         
