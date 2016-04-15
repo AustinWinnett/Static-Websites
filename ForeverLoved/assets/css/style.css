@@ -67,15 +67,14 @@ body {
     text-align: right;
     font-family: "Satisfy", cursive;
     font-size: 6em;
-    float: right;
     padding: 20px 0 0; }
-  /* line 103, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 102, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #title h2 {
     text-align: center;
     font-family: "Raleway", sans-serif;
     font-size: 1.5em; }
 
-/* line 115, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+/* line 114, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
 #navbar {
   font-family: "Satisfy", cursive;
   font-size: 2em;
@@ -83,52 +82,51 @@ body {
   text-align: right;
   width: 100%;
   display: inline; }
-  /* line 124, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 123, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #navbar ul {
     text-align: right;
-    padding: 0;
-    float: right; }
-  /* line 132, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+    padding: 0; }
+  /* line 130, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #navbar a {
     color: inherit;
     padding: 0; }
-  /* line 139, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 137, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #navbar a:hover {
     text-decoration: none; }
-  /* line 145, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 143, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #navbar li {
     display: inline-block;
     padding: 0 20px;
     width: 200px;
     text-align: center;
     cursor: pointer; }
-  /* line 155, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 153, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #navbar li:hover {
     background: url("../img/TealStroke.png") no-repeat;
     background-position: center;
     background-size: 150px 50px; }
-  /* line 162, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 160, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #navbar .active, #navbar .active:hover {
     background: url("../img/PinkStroke.png") no-repeat;
     background-position: center;
     background-size: 150px 50px; }
-    /* line 168, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+    /* line 166, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
     #navbar .active a, #navbar .active:hover a {
       text-decoration: none; }
 
-/* line 178, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+/* line 176, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
 #main {
   padding: 0;
   margin: 0;
   width: 100%; }
-  /* line 184, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 182, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main h2 {
     font-family: "Satisfy", cursive;
     font-size: 5em;
     padding: 0 0 20px 0;
     margin: 0;
     transition: 0.5s; }
-  /* line 194, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 192, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main #artSearch {
     background: none;
     border: none;
@@ -139,12 +137,12 @@ body {
     box-sizing: content-box;
     transition: 0.5s;
     width: 100%; }
-    /* line 206, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+    /* line 204, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
     #main #artSearch:focus {
       background-color: rgba(0, 0, 0, 0.1);
       transition: 0.5s;
       border-radius: 5px; }
-  /* line 216, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 214, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main .artBox {
     width: 100%;
     height: 500px;
@@ -155,25 +153,25 @@ body {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     margin-bottom: 40px; }
-  /* line 231, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 229, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main .about {
     font-size: 1.5em;
     display: none; }
-  /* line 238, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 236, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main .contact {
     font-size: 1.5em;
     display: none; }
-    /* line 245, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+    /* line 243, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
     #main .contact form input, #main .contact form textarea {
       display: block;
       border-radius: 5px;
       margin: 10px 0;
       padding: 5px;
       width: 75%; }
-    /* line 255, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+    /* line 253, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
     #main .contact form textarea {
       height: 200px; }
-    /* line 261, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+    /* line 259, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
     #main .contact form .submitBtn {
       width: 20%;
       border: none;
@@ -183,7 +181,7 @@ body {
       padding: 10px 0;
       position: relative;
       font-family: "Satisfy", cursive; }
-    /* line 274, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+    /* line 272, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
     #main .contact form .submitBtn:active, #main .contact form .submitBtn:focus {
       background: url("../img/PinkStroke.png") no-repeat;
       background-position: center;
@@ -191,17 +189,17 @@ body {
       padding: 10px 20px;
       border: none;
       outline: 0; }
-  /* line 292, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 290, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main .artItems .item {
     margin: 15px;
     border: 5px solid rgba(0, 0, 0, 0.4);
     width: auto;
     height: 150px; }
-    /* line 299, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+    /* line 297, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
     #main .artItems .item:hover {
       border: 5px solid rgba(0, 0, 0, 0.8); }
 
-/* line 311, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+/* line 309, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
 #leftNavMobile {
   position: relative;
   top: 5%;
@@ -216,7 +214,7 @@ body {
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
   height: 80px; }
-  /* line 327, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 325, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #leftNavMobile li {
     list-style: none;
     text-align: center;
@@ -225,13 +223,13 @@ body {
     padding: 0 40px;
     margin: 0 40px;
     height: 100px; }
-  /* line 339, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 337, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #leftNavMobile li:hover {
     color: #d0d0d0; }
-  /* line 345, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 343, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #leftNavMobile .break {
     font-size: .05em; }
-  /* line 351, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 349, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #leftNavMobile .desc {
     font-size: .4em;
     display: inline;
@@ -241,50 +239,50 @@ body {
 
 /* ========= MEDIA QUERIES =========*/
 @media screen and (min-width: 768px) and (max-width: 1172px) {
-  /* line 367, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 365, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #leftNav li {
     font-size: 3.5em; }
-    /* line 371, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+    /* line 369, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
     #leftNav li .desc {
       font-size: .3em;
       top: -20px; } }
 
 @media screen and (max-width: 915px) {
-  /* line 384, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 382, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #leftCol {
     display: none; }
-  /* line 390, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 388, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #title, #navbar {
     text-align: center; }
-  /* line 396, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 394, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #title h1, #navbar ul {
     text-align: center; }
-  /* line 402, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 400, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #navbar li {
     padding: 0;
     width: 150px; }
-  /* line 409, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 407, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #leftNavMobile {
     display: block; }
-    /* line 413, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+    /* line 411, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
     #leftNavMobile li {
       display: inline-block; }
-  /* line 423, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 421, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #rightCol {
     overflow: scroll;
     -webkit-overflow-scrolling: touch; }
-  /* line 430, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 428, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #navbar {
     padding: 0; }
-  /* line 436, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 434, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   .submitBtn {
     width: 30%; }
-  /* line 442, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 440, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #rightCol {
     padding: 0 20px; } }
 
 @media screen and (max-width: 424px) {
-  /* line 452, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 450, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #leftNavMobile {
     margin: 20px auto;
     display: block;
@@ -295,32 +293,32 @@ body {
     white-space: nowrap;
     height: 100px;
     border-radius: 50%; }
-    /* line 464, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+    /* line 462, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
     #leftNavMobile li {
       font-size: 3em;
       padding: 20px 0px;
       margin: 0 40px;
       height: 100px; }
-      /* line 471, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+      /* line 469, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
       #leftNavMobile li span {
         visibility: hidden; }
-  /* line 481, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 479, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #leftNavMobile::after {
     content: "asdfasdfsd>"; }
-  /* line 487, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 485, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main #artTitle {
     font-size: 3.5em; }
-  /* line 494, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 492, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main .artItems .item {
     margin: 15px 0; }
-  /* line 500, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 498, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main .contact form .submitBtn {
     width: 50%; }
-  /* line 506, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 504, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main .contact form input, #main .contact form textarea {
     width: 100%;
     font-size: .8em; }
-  /* line 513, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 511, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main .artBox {
     width: 100%;
     height: 500px;
@@ -333,7 +331,7 @@ body {
     margin: 0 0 40px 0; } }
 
 @media screen and (min-height: 716px) and (max-height: 844px) {
-  /* line 532, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 530, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main .artBox {
     height: 300px;
     padding: 20px;
@@ -341,7 +339,7 @@ body {
     -webkit-overflow-scrolling: touch; } }
 
 @media screen and (max-height: 716px) {
-  /* line 545, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
+  /* line 543, C:/Users/awinnett/Downloads/Websites/ForeverLoved/assets/css/style.scss */
   #main .artBox {
     height: 300px;
     padding: 20px;
