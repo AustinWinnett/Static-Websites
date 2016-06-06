@@ -1,0 +1,614 @@
+$font-cursive: 'Dancing Script', cursive;
+$font-bold: 'Oswald', sans-serif;
+$font-default: 'Open Sans Condensed', sans-serif;
+
+$red: #f4511e;
+$orange: #ff7043;
+$blue: #00e5ff;
+$blue: #00e5ff;
+$green: #66BB6A;
+$teal: #80DEEA;
+$turq: #00ACC1;
+$pink: #ffab91;
+$purple: #B79FDF;
+$yellow: #ffeb3b;
+$gold: #f9a825;
+$gray: #9E9E9E;
+$purple1: #4527A0;
+$purple2: #7E57C2;
+$purple3: #B39DDB;
+$pink1: #EA80FC;
+$pink2: #FF80AB;
+$peach: #FFCDD2;
+
+
+@mixin square($color) {
+    
+    background-color: $color;
+    width: 210px;
+    height: 210px;
+    z-index: 8;
+    transition: 0.5s;
+    cursor: pointer;
+    
+    &:before {
+        
+        content: "";
+	    width: 0;
+	    height: 0;
+	    border-bottom: 210px solid darken($color, 5%);
+	    border-left: 210px solid transparent;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index:-1;
+        transition: 0.5s;
+        
+    }
+    
+}
+
+body {
+    
+    background: #333;
+    color: #333;
+    font-family: $font-default;
+    
+}
+
+h1, h2, h3, h4, p {
+    
+    padding: 0;
+    margin: 0;
+    
+}
+
+h2 {
+    
+
+    font-size: 4em;
+    text-transform: uppercase;
+    
+}
+
+#top {
+    
+    background: url('../img/purplemat3.png') no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    -webkit-box-shadow: 0px 5px 18px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 18px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 18px -1px rgba(0,0,0,0.75);
+    position: fixed;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    
+}
+
+#searchbar {
+    
+    position: relative;
+    top: 10px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0, .8);
+    font-family: $font-default, FontAwesome;
+    font-size: 2em;
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+    transition: 0.5s;
+    
+    &:focus {
+        
+        background-color: rgba(255, 255, 255, .8);
+        
+    }
+    
+}
+
+.logo {
+    
+    text-align: center;
+    padding-top: 50px;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.colorful {
+    
+    font-family: $font-cursive;
+    font-size: 2.2em;
+    text-align: left !important;
+    position: relative;
+    left: -150px;
+    transition: 0.5s;
+    
+}
+
+.language {
+    
+    font-family: $font-bold;
+    font-size: 2.4em;
+    position: relative;
+    top: -30px;
+    left: 60px;
+    transition: 0.5s;
+    
+}
+
+#bottom {
+
+    text-align: center;
+    position: relative;
+    
+}
+
+.categories {
+    
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    height: 540px;
+    width: 80%;
+    text-align: center;
+    
+}
+
+.love {
+    
+    @include square($pink2);
+    
+}
+
+.littles {
+    
+    @include square($purple3);
+    
+}
+
+.adoration {
+    
+    @include square($teal);
+    
+}
+
+.tunes {
+    
+    @include square($peach);
+    
+}
+
+.quotes {
+    
+    @include square($pink1);
+    
+}
+
+.etc {
+    
+    @include square($purple2);
+    
+}
+
+.cat {
+    
+    display: inline-block;
+    margin : 30px 100px;
+    position: relative;
+    padding: 25px;
+    color: #333;
+    -webkit-box-shadow: 0px 5px 18px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 18px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 18px -1px rgba(0,0,0,0.75);
+    transition: .5s;
+    
+    &:hover {
+        
+        @include square(white);
+        color: #333;
+        
+    }
+    
+    i {
+        
+        font-size: 8em;
+        
+    }
+    
+    .desc {
+        
+        color: transparent;
+        font-size: 1.8em;
+        padding-top: 10px;
+        transition: .5s;
+        
+    }
+    
+}
+
+#focus {
+
+    display: block;
+    margin: 0 auto;
+    background-color: $teal;
+    padding: 20px;
+    height: 100vh;
+    width: 80%;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 22px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 22px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 22px 2px rgba(0,0,0,0.75);
+
+}
+
+#close {
+    
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2em;
+    
+}
+
+.artBox {
+    
+    display: block;
+    margin: 10px auto;
+    background: url('../img/symphony.png') repeat;
+    width: 95%;
+    height: 85vh;
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    
+}
+
+.item {
+    
+    height: 200px;
+    margin: 20px;
+    transition: 0.5s;
+    border: 4px solid #333;
+    
+    &:hover {
+        
+        -webkit-box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.75);
+        
+    }
+    
+}
+
+#info {
+    
+    display: none;
+    color: white;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, .8);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    
+}
+
+.infoContent {
+    
+    display: none;
+    margin: 0 auto;
+    padding: 30px;
+    width: 70%;
+    
+    p {
+        
+        font-size: 1.5em;
+        text-align: left;
+        text-indent: 50px;
+        
+    }
+    
+}
+
+.shortcuts {
+    
+    font-size: 3em;
+    
+    i {
+        
+        padding: 0 20px;
+        
+    }
+    
+}
+
+.infoClose {
+    
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 4em;
+    color: white;
+    display: none;
+    cursor: pointer;
+    
+}
+
+.info {
+    
+    font-size: 3em;
+    color: rgba(255, 255, 255, .6);
+    display: block;
+    padding-top: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+    &:hover {
+        
+        color: white;
+        
+    }
+    
+}
+
+.contact p {
+    
+    text-indent: 0;
+    
+}
+
+.pricing, .contact {
+    
+    display: none;
+    
+}
+
+.about, .pricing, .contact {
+    
+    padding: 20px 0;
+    
+    h2 {
+        
+        padding-bottom: 10px;
+        
+    }
+    
+}
+
+.aboutIcon {
+    
+    color: $teal;
+    transition: 0.5s;
+    cursor: pointer;
+    
+    &:hover {
+        
+        color: darken($teal, 40%);
+        
+    }
+    
+}
+
+.pricingIcon {
+    
+    color: $pink2;
+    transition: 0.5s;
+    cursor: pointer;
+    
+    &:hover {
+        
+        color: darken($pink2, 40%);
+        
+    }
+    
+}
+
+.contactIcon {
+    
+    color: $purple3;
+    transition: 0.5s;
+    cursor: pointer;
+    
+    &:hover {
+        
+        color: darken($purple3, 40%);
+        
+    }
+    
+}
+
+form {
+    
+    text-align: left;
+    
+    label {
+        
+        padding: 5px 0 2px;
+        margin: 0;
+        font-size: 2em;
+        
+    }
+    
+    input, select, textarea {
+        
+        display: block;
+        color: #333;
+        font-size: 2em;
+        width: 100%;
+        margin: 15px 0;
+        
+    }
+    
+    input[type="submit"] {
+        
+        background-color: $teal;
+        border: 0;
+        margin-top: 40px;
+        transition: 0.5s;
+        width: 200px;
+        
+        &:hover, &:active {
+            
+            background-color: darken($teal, 20%);
+            
+        }
+        
+        &:focus {
+            
+            background-color: darken($teal, 30%);
+            
+        }
+        
+    }
+    
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media (max-width: 636px) {
+    
+    .logo {
+    
+        padding-top: 80px;
+
+    }
+
+    .colorful {
+
+
+        font-size: 1.5em;
+        left: -100px;
+
+    }
+
+    .language {
+
+        font-size: 1.7em;
+        top: -20px;
+        left: 60px;
+
+    }
+    
+}
+
+@media (max-width: 544px) {
+    
+    #top {
+        
+        height: 300px;
+        
+    }
+    
+    #info {
+        
+        height: 300px;
+        
+    }
+    
+    .infoContent {
+        
+        width: 90%;
+        padding: 20px 0;
+        
+    }
+    
+    .infoClose {
+        
+        font-size: 2em;
+        
+    }
+    
+    .logo {
+    
+        padding-top: 25px;
+
+    }
+    
+    .cat {
+        
+        margin: 30px auto;
+        
+    }
+
+    .colorful {
+
+
+        font-size: 1em;
+        left: -80px;
+
+    }
+
+    .language {
+
+        font-size: 1.2em;
+        top: -10px;
+        left: 30px;
+
+    }
+    
+    .artBox {
+        
+        margin: 5px auto;
+        height: 80vh;
+        
+    }
+    
+    #focus {
+
+        width: 98%;
+        padding: 5px;
+        
+    }
+    
+    .item {
+        
+        height: 125px;
+
+        
+    }
+    
+    #searchbar {
+        
+        width: 250px;
+        font-size: 1.5em;
+        
+    }
+    
+    textarea {
+        
+        height: 200px;
+        
+    }
+    
+}
+
+@media (max-height: 600px) {
+    
+    #focus {
+        
+        height: 105vh;
+        
+    }
+    
+}
+
+@media (max-height: 425px) {
+    
+    #focus {
+        
+        height: 110vh;
+        
+    }
+    
+}
