@@ -1,0 +1,217 @@
+/* line 5, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2em; }
+
+/* line 12, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+.clear {
+  clear: both; }
+
+/* line 18, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5em;
+  text-align: center;
+  padding: 0 0 10px;
+  margin: 0; }
+
+/* line 28, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+h2 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 2.5em; }
+
+/* line 36, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+h3 {
+  font-size: 1.5em;
+  padding: 0 0 10px;
+  margin: 0; }
+  /* line 42, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  h3 .fa {
+    font-size: .8em;
+    transition: 0.5s; }
+
+/* line 51, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+p {
+  text-indent: 50px;
+  font-size: 1.2em; }
+
+/* line 58, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+.lead {
+  text-indent: 0; }
+
+/* line 64, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+#navi {
+  text-align: center;
+  padding-top: 30px; }
+
+/* line 71, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+.naviBar {
+  margin: 0;
+  padding: 00;
+  font-size: 2em; }
+  /* line 77, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .naviBar a {
+    color: #333; }
+    /* line 81, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+    .naviBar a:hover {
+      text-decoration: none; }
+  /* line 89, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .naviBar li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px; }
+    /* line 95, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+    .naviBar li:hover {
+      border-bottom: 2px solid #333; }
+  /* line 103, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .naviBar .active {
+    border-bottom: 2px solid #333; }
+
+/* line 111, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+.mobileMenu {
+  display: none; }
+
+/* line 117, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+.menuTrigger {
+  cursor: pointer; }
+
+/* line 123, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+.naviMenu {
+  margin: 0;
+  padding: 0;
+  display: none;
+  font-size: 1.3em;
+  border: 1px solid #ddd;
+  width: 80%;
+  margin: 0 auto; }
+  /* line 133, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .naviMenu a {
+    color: #333; }
+    /* line 137, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+    .naviMenu a:hover {
+      text-decoration: none; }
+  /* line 145, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .naviMenu li {
+    list-style: none;
+    margin: 10px 20px; }
+  /* line 152, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .naviMenu .active {
+    text-decoration: underline; }
+
+/* line 162, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+.line {
+  width: 70%;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 0 10px; }
+
+/* line 172, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+.coverImgWrapper {
+  text-align: center;
+  padding: 50px; }
+
+/* line 179, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+.coverImg {
+  width: 500px;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75); }
+
+/* line 188, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+#footer {
+  text-align: center;
+  padding: 20px 0; }
+  /* line 193, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  #footer i {
+    padding: 0 10px; }
+  /* line 199, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  #footer a {
+    color: #333;
+    transition: 0.5s; }
+    /* line 204, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+    #footer a:hover {
+      color: #adadad; }
+
+/* line 214, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+.credit {
+  text-indent: 0px;
+  padding-top: 5px;
+  font-size: .8em;
+  color: #333; }
+  /* line 221, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .credit a {
+    color: inherit; }
+
+/* line 229, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+#gallery {
+  text-align: center; }
+
+/* line 235, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+.galleryImg {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  overflow: hidden;
+  text-align: left;
+  transition: 0.3s; }
+  /* line 246, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .galleryImg img {
+    width: 100%;
+    position: absolute;
+    transition: 0.5s; }
+    /* line 252, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+    .galleryImg img:hover {
+      width: 105%; }
+
+/* line 262, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+.contactForm {
+  width: 50%;
+  display: block;
+  margin: 0 auto; }
+  /* line 268, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .contactForm label, .contactForm input[type="text"], .contactForm textarea {
+    display: block;
+    width: 100%; }
+  /* line 275, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .contactForm input, .contactForm textarea {
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    background-color: white; }
+  /* line 283, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .contactForm textarea {
+    height: 200px; }
+  /* line 289, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .contactForm input[type="submit"] {
+    font-weight: bold; }
+    /* line 293, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+    .contactForm input[type="submit"]:hover, .contactForm input[type="submit"]:active {
+      background-color: #dddddd; }
+    /* line 299, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+    .contactForm input[type="submit"]:focus {
+      background-color: #a0a0a0; }
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 709px) {
+  /* line 313, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .coverImg {
+    width: 100%; }
+  /* line 319, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .naviBar {
+    display: none; }
+  /* line 325, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .mobileMenu {
+    display: block; }
+  /* line 331, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  .contactForm {
+    width: 100%; } }
+
+@media (max-width: 393px) {
+  /* line 341, C:/Users/awinnett/Downloads/Websites/ReserPhotography/assets/css/style.scss */
+  h1 {
+    font-size: 2em; } }
+
+/*# sourceMappingURL=style.css.map */

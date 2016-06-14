@@ -1,0 +1,347 @@
+$font-cursive: 'Dancing Script', cursive;
+$font-bold: 'Oswald', sans-serif;
+$font-default: 'Open Sans Condensed', sans-serif;
+
+body {
+    
+    font-family: $font-default;
+    font-size: 2em;
+    
+}
+
+.clear {
+    
+    clear: both;
+    
+}
+
+h1 {
+    
+    font-family: $font-cursive;
+    font-size: 3.5em;
+    text-align: center;
+    padding: 0 0 10px;
+    margin: 0;
+    
+}
+
+h2 {
+        
+    font-family: $font-cursive;
+    text-align: center;
+    font-size: 2.5em;
+
+}
+
+h3 {
+    
+    font-size: 1.5em;
+    padding: 0 0 10px;
+    margin: 0;
+    
+    .fa {
+        
+        font-size: .8em;
+        transition: 0.5s;
+        
+    }
+    
+}
+
+p {
+    
+    text-indent: 50px;
+    font-size: 1.2em;
+    
+}
+
+.lead {
+    
+    text-indent: 0;
+    
+}
+
+#navi {
+    
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+.naviBar {
+    
+    margin: 0;
+    padding: 00;
+    font-size: 2em;
+    
+    a {
+        
+        color: #333;
+        
+        &:hover {
+            
+            text-decoration: none;
+            
+        }
+        
+    }
+    
+    li {
+        
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        
+        &:hover {
+            
+            border-bottom: 2px solid #333;
+            
+        }
+        
+    }
+    
+    .active {
+    
+        border-bottom: 2px solid #333;
+
+    }
+    
+}
+
+.mobileMenu {
+    
+    display: none;
+    
+}
+
+.menuTrigger {
+    
+    cursor: pointer;
+    
+}
+
+.naviMenu {
+    
+    margin: 0;
+    padding: 0;
+    display: none;
+    font-size: 1.3em;
+    border: 1px solid #ddd;
+    width: 80%;
+    margin: 0 auto;
+    
+    a {
+        
+        color: #333;
+        
+        &:hover {
+            
+            text-decoration: none;
+            
+        }
+        
+    }
+    
+    li {
+        
+        list-style: none;
+        margin: 10px 20px;
+        
+    }
+    
+    .active {
+
+        text-decoration: underline;
+
+    }
+    
+}
+
+
+
+.line {
+    
+    width: 70%;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0 10px;
+    
+}
+
+.coverImgWrapper {
+    
+    text-align: center;
+    padding: 50px;
+    
+}
+
+.coverImg {
+    
+    width: 500px;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    
+}
+
+#footer {
+    
+    text-align: center;
+    padding: 20px 0;
+    
+    i {
+        
+        padding: 0 10px;
+        
+    }
+    
+    a {
+        
+        color: #333;
+        transition: 0.5s;
+        
+        &:hover {
+            
+            color: #adadad;
+            
+        }
+        
+    }
+    
+}
+
+.credit {
+    
+    text-indent: 0px;
+    padding-top: 5px;
+    font-size: .8em;
+    color: #333;
+    
+    a {
+        
+        color: inherit;
+        
+    }
+    
+}
+
+#gallery {
+        
+    text-align: center;
+    
+}
+
+.galleryImg {
+    
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s;
+    
+    img {
+        
+        width: 100%;
+        position: absolute;
+        transition: 0.5s;
+        
+        &:hover {
+            
+            width: 105%;
+            
+        }
+        
+    }
+    
+}
+
+.contactForm {
+    
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    
+    label, input[type="text"], textarea {
+        
+        display: block;
+        width: 100%;
+        
+    }
+    
+    input, textarea {
+        
+        margin-bottom: 20px;
+        border: 2px solid #ddd;
+        background-color: white;
+        
+    }
+    
+    textarea {
+        
+        height: 200px;
+        
+    }
+    
+    input[type="submit"] {
+        
+        font-weight: bold;
+        
+        &:hover, &:active {
+            
+            background-color: #dddddd;
+            
+        }
+        
+        &:focus{
+            
+            background-color: #a0a0a0;
+            
+        }
+        
+    }
+    
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media (max-width: 709px) {
+    
+    .coverImg {
+
+        width: 100%;
+
+    }
+    
+    .naviBar {
+        
+        display: none;
+        
+    }
+    
+    .mobileMenu {
+        
+        display: block;
+        
+    }
+    
+    .contactForm {
+    
+        width: 100%;
+
+    }
+    
+}
+
+@media (max-width: 393px) {
+    
+    h1 {
+        
+        font-size: 2em;
+        
+    }
+    
+}
