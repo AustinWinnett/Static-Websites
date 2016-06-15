@@ -7,6 +7,33 @@ $(document).ready(function() {
     
 });
 
+function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+}
+
+$(document).ready( function() {
+    $('#submitBtn').click(function(e){
+        var email = $("#email").val();
+        if($("#name").val() && $("#email").val() && isEmail(email) && $("#message").val()) {
+            var f = $('#contactForm');
+            $.ajax({
+              type: "POST",
+              url: "send_form_email.php",
+              data: f.serialize()
+            });
+            alert("Thank you for contacting me!  I'll be in touch with you shortly.");
+            $("#successMsg").text("Your message has been sent!");
+        } else if (!isEmail(email)) {
+            
+            e.preventDefault;
+            alert("It looks like your email address isn't correct.  Please try again!")
+            $("#successMsg").text("");
+            
+        }
+    });
+});
+
 /*------------------*/
 
 /* Shows desc on hover */
@@ -59,9 +86,14 @@ $(".cat").click(function() {
         $(".cat").removeClass("rotateOut");
         $("#focus").css("background-color", bgCol);
         $(".artBox a").hide();
+        if ($("#info").is(":hidden")) {
+            
+            $(".optClose").fadeIn(500);
+            
+        }
         $("#focus").show();
         $("#focus").addClass("animated slideInDown");
-        $("html, body").animate({ scrollTop: $(document).height() }, 3000);
+        /*$("html, body").animate({ scrollTop: $(document).height() }, 3000);*/
         return false;
         
     }, 900);
@@ -74,6 +106,7 @@ $(".cat").click(function() {
     
 });
 
+/* Enables the searchbar */
 $('#searchbar').keypress(function (e) {
   if (e.which == 13) {
     var searchTerms = $('#searchbar').val();
@@ -101,52 +134,58 @@ $('#searchbar').keypress(function (e) {
 });
 
 /* Closes the box */
-$("#close").click(function() {
+$("#close, .logo, .optClose").click(function() {
     
-    $("#focus").removeClass("slideInDown").addClass("animated slideOutUp");
-    $("html, body").animate({
-         scrollTop:0
-         },300);
-    
-    setTimeout(function() {
+    if ($("#focus").is(":visible")) {
         
-        $("#focus").removeAttr("style");
-        $("#focus").hide();
-        $(".animated").addClass("rotateIn");
-        $("#bottom").not(".cat .animated").fadeIn(500);
+        $("#focus").removeClass("slideInDown").addClass("animated slideOutUp");
+        $(".optClose").fadeOut(500);
+        $("html, body").animate({
+             scrollTop:0
+             },300);
+
+        setTimeout(function() {
+
+            $("#focus").removeAttr("style");
+            $("#focus").hide();
+            $(".animated").addClass("rotateIn");
+            $("#bottom").not(".cat .animated").fadeIn(500);
+
+        }, 1000);
+
+        setTimeout(function() {
+
+            $("#focus").removeClass("animated slideOutUp");
+            $(".cat").removeClass("animated rotateIn")
+
+        }, 2000);
         
-    }, 1000);
-    
-    setTimeout(function() {
-        
-        $("#focus").removeClass("animated slideOutUp");
-        $(".cat").removeClass("animated rotateIn")
-        
-    }, 2000);
+    }
     
 });
 
+/* What happens when the info button is clicked */
 $(".info").click(function() {
    
-    $(".topContent").fadeOut(1000);
+    $(".topContent, .optClose").fadeOut(500);
     
     setTimeout(function() {
         
         $("#info").show();
         $("#info").addClass("animated slideInDown");
          
-    }, 1100);
+    }, 800);
     
     setTimeout(function() {
         
         $(".infoClose, .infoContent").fadeIn(1000);
 
-    }, 1800);
+    }, 1500);
     
 });
 
+/* What happens when the info box is closed*/
 $(".infoClose").click(function() {
-    
     
     $(".infoClose, .infoContent").fadeOut(500);
     
@@ -160,7 +199,7 @@ $(".infoClose").click(function() {
     setTimeout(function() {
         
         $("#info").hide();
-        $(".topContent").fadeIn(1000);
+        $(".topContent").fadeIn(500);
         $("#info").removeClass("animated slideOutUp")
         
     }, 1500);

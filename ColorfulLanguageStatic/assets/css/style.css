@@ -274,8 +274,8 @@ h2 {
   float: right;
   cursor: pointer;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   font-size: 2em; }
 
 /* line 263, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
@@ -296,7 +296,7 @@ h2 {
   height: 200px;
   margin: 20px;
   transition: 0.5s;
-  border: 4px solid #333; }
+  border: 2px solid #333; }
   /* line 285, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .item:hover {
     -webkit-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.75);
@@ -320,19 +320,21 @@ h2 {
   padding: 30px;
   width: 70%; }
   /* line 314, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  .infoContent .about p {
+    text-indent: 50px; }
+  /* line 320, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .infoContent p {
     font-size: 1.5em;
-    text-align: left;
-    text-indent: 50px; }
+    text-align: left; }
 
-/* line 324, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+/* line 329, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
 .shortcuts {
   font-size: 3em; }
-  /* line 328, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 333, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .shortcuts i {
     padding: 0 20px; }
 
-/* line 336, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+/* line 341, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
 .infoClose {
   position: absolute;
   bottom: 20px;
@@ -342,159 +344,227 @@ h2 {
   display: none;
   cursor: pointer; }
 
-/* line 348, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+/* line 353, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
 .info {
   font-size: 3em;
   color: rgba(255, 255, 255, 0.6);
   display: block;
-  padding-top: 40px;
+  padding-top: 35px;
   cursor: pointer;
   transition: 0.5s; }
-  /* line 357, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 362, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .info:hover {
     color: white; }
 
-/* line 365, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+/* line 370, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+.optClose {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  bottom: -15px; }
+  /* line 379, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  .optClose:hover .line {
+    border-bottom: 2px solid white; }
+
+/* line 389, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+.line {
+  display: block;
+  margin: 3px auto 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  width: 50px;
+  transition: 0.5s; }
+
+/* line 399, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
 .contact p {
   text-indent: 0; }
 
-/* line 371, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+/* line 405, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
 .pricing, .contact {
   display: none; }
 
-/* line 377, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+/* line 411, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
 .about, .pricing, .contact {
   padding: 20px 0; }
-  /* line 381, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 415, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .about h2, .pricing h2, .contact h2 {
     padding-bottom: 10px; }
 
-/* line 389, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+/* line 423, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
 .aboutIcon {
   color: #80DEEA;
   transition: 0.5s;
   cursor: pointer; }
-  /* line 395, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 429, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .aboutIcon:hover {
     color: #167b88; }
 
-/* line 403, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+/* line 437, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
 .pricingIcon {
   color: #FF80AB;
   transition: 0.5s;
   cursor: pointer; }
-  /* line 409, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 443, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .pricingIcon:hover {
     color: #b3003d; }
 
-/* line 417, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+/* line 451, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
 .contactIcon {
   color: #B39DDB;
   transition: 0.5s;
   cursor: pointer; }
-  /* line 423, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 457, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .contactIcon:hover {
     color: #4a2e7e; }
 
-/* line 431, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+/* line 465, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+.selfie {
+  width: 200px;
+  float: right; }
+
+/* line 472, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+.pricing {
+  text-align: center; }
+  /* line 476, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  .pricing .sizes {
+    display: inline-block;
+    padding: 0 40px; }
+  /* line 483, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  .pricing .size {
+    font-size: 3em;
+    font-weight: bold;
+    color: #FF80AB; }
+  /* line 491, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  .pricing ul {
+    margin: 0;
+    padding: 0; }
+  /* line 498, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  .pricing li {
+    font-size: 2em;
+    list-style: none; }
+    /* line 503, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+    .pricing li li {
+      color: green; }
+  /* line 511, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  .pricing ul > ul {
+    padding-left: 25px;
+    padding: 0; }
+
+/* line 521, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+.pricingInfo p {
+  text-align: center;
+  text-indent: 0 !important; }
+
+/* line 530, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
 form {
   text-align: left; }
-  /* line 435, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 534, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   form label {
     padding: 5px 0 2px;
     margin: 0;
-    font-size: 2em; }
-  /* line 443, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+    font-size: 1.5em; }
+  /* line 542, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   form input, form select, form textarea {
     display: block;
     color: #333;
-    font-size: 2em;
+    font-size: 1.5em;
     width: 100%;
     margin: 15px 0; }
-  /* line 453, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 552, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   form input[type="submit"] {
     background-color: #80DEEA;
     border: 0;
     margin-top: 40px;
     transition: 0.5s;
     width: 200px; }
-    /* line 461, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+    /* line 560, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
     form input[type="submit"]:hover, form input[type="submit"]:active {
       background-color: #28c7dc; }
-    /* line 467, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+    /* line 566, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
     form input[type="submit"]:focus {
       background-color: #1ea2b3; }
 
+/* line 576, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+iframe body {
+  color: white; }
+
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 636px) {
-  /* line 481, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 586, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .logo {
     padding-top: 80px; }
-  /* line 487, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 592, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .colorful {
     font-size: 1.5em;
     left: -100px; }
-  /* line 495, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 600, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .language {
     font-size: 1.7em;
     top: -20px;
     left: 60px; } }
 
 @media (max-width: 544px) {
-  /* line 507, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 612, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   #top {
     height: 300px; }
-  /* line 513, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 618, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   #info {
     height: 300px; }
-  /* line 519, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 624, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .infoContent {
     width: 90%;
     padding: 20px 0; }
-  /* line 526, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 631, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .infoClose {
     font-size: 2em; }
-  /* line 532, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 637, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .logo {
     padding-top: 25px; }
-  /* line 538, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 643, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .cat {
     margin: 30px auto; }
-  /* line 544, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 649, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .colorful {
     font-size: 1em;
     left: -80px; }
-  /* line 552, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 657, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .language {
     font-size: 1.2em;
     top: -10px;
     left: 30px; }
-  /* line 560, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 665, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .artBox {
     margin: 5px auto;
     height: 80vh; }
-  /* line 567, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 672, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   #focus {
     width: 98%;
     padding: 5px; }
-  /* line 574, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 679, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   .item {
     height: 125px; }
-  /* line 581, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 686, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   #searchbar {
     width: 250px;
     font-size: 1.5em; }
-  /* line 588, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 693, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   textarea {
     height: 200px; } }
 
+@media (max-width: 437px) {
+  /* line 704, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  .selfie {
+    float: none !important; } }
+
 @media (max-height: 600px) {
-  /* line 598, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 714, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   #focus {
-    height: 105vh; } }
+    height: 105vh; }
+  /* line 720, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  .optClose {
+    bottom: -30px; } }
 
 @media (max-height: 425px) {
-  /* line 608, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
+  /* line 730, C:/Users/awinnett/Downloads/Websites/ColorfulLanguage/assets/css/style.scss */
   #focus {
     height: 110vh; } }
 

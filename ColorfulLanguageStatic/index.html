@@ -32,6 +32,7 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         
+        <!-- This website was designed and created by Austin Winnett.  http://austinwinnett.com -->
 
     </head>
     <body>
@@ -53,57 +54,121 @@
                       
                   </div>
                    
-                   <div class="about">
+                    <div class="about">
                        
                        <h2>About Me</h2>
+                       
+                       <img src="assets/img/Alyssa.jpg" alt="Alyssa Jane" class="selfie">
                
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse incidunt officia facilis? Provident quo quae sapiente, quia, voluptatibus saepe ut eius dicta dolores expedita tempora error tenetur? Maiores, aliquid, ad! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dicta suscipit, iste ea rerum ab esse placeat voluptate ipsam, reiciendis, aperiam eveniet hic fugiat. Ex dicta aut magnam eligendi, delectus.</p>
+                       <p>I am by no means a professional painter; I just like to put pretty words, lyrics, and verses into fun colors and fonts! Whether you are looking for gift ideas or to add a splash of color into your home, I strive to make just what you're looking for!</p>
+                       
+                   </div>
+                   
+                    <div class="pricing">
 
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse incidunt officia facilis? Provident quo quae sapiente, quia, voluptatibus saepe ut eius dicta dolores expedita tempora error tenetur? Maiores, aliquid, ad! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dicta suscipit, iste ea rerum ab esse placeat voluptate ipsam, reiciendis, aperiam eveniet hic fugiat. Ex dicta aut magnam eligendi, delectus.</p>
-                       
-                   </div>
+                        <h2>Pricing</h2>
+
+                        <ul class="sizes">
+                            <li class="size">8x10</li>
+
+                            <ul>
+
+                                <li>Pre-made - $10</li>
+                                <li>Custom-text - $15</li>
+                                <li>Custom-design- $20</li>
+
+                            </ul>
+
+                        </ul>
+
+                        <ul class="sizes">
+                            <li class="size">11x14</li>
+
+                            <ul>
+
+                                <li>Pre-made - $20</li>
+                                <li>Custom-text - $25</li>
+                                <li>Custom-design- $30</li>
+
+                            </ul>
+
+                        </ul>
+
+                        <ul class="sizes">
+                            <li class="size">12x12</li>
+
+                            <ul>
+
+                                <li>Pre-made - $20</li>
+                                <li>Custom-text - $25</li>
+                                <li>Custom-design- $30</li>
+
+                            </ul>
+
+                        </ul>
+
+                        <ul class="sizes">
+                            <li class="size">16x20</li>
+
+                            <ul>
+
+                                <li>Pre-made - $30</li>
+                                <li>Custom-text - $35</li>
+                                <li>Custom-design- $40</li>
+
+                            </ul>
+
+                        </ul>
+                        
+                        <hr>
+                        <div class="pricingInfo">
+                            
+                            <p>*ask me about prices for frames &amp; alternate sizes</p>
+                            <p>**Custom design indicates that there are specifics you want included</p>
+                            
+                        </div>
+
+                    </div>
                    
-                   <div class="pricing">
-                       
-                       <h2>Pricing</h2>
-                   
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse incidunt officia facilis? Provident quo quae sapiente, quia, voluptatibus saepe ut eius dicta dolores expedita tempora error tenetur? Maiores, aliquid, ad! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dicta suscipit, iste ea rerum ab esse placeat voluptate ipsam, reiciendis, aperiam eveniet hic fugiat. Ex dicta aut magnam eligendi, delectus.</p>
-                       
-                   </div>
-                   
-                   <div class="contact">
+                    <div class="contact">
                        
                        <h2>Contact</h2>
                    
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                       <p>Interested in in some Colorful Language? Fill out the form below to contact me!</p>
                        
-                       <form action="">
+                       <form name="contactform" method="POST" action="" id="contactForm" onsubmit="return false">
                            
                            <label for="name">Name:</label>
-                           <input type="text" name="name" placeholder="Name">
+                           <input type="text" name="name" placeholder="Name" id="name" required>
                            
                            <label for="email">Email Address:</label>
-                           <input type="text" name="email" placeholder="Email Address">
+                           <input type="text" name="email" placeholder="Email Address" id="email" required>
                            
                            <label for="size">Size:</label>
-                           <select name="size">
+                           <select name="size" id="size">
                                
-                               <option value="Size 1">Size 1</option>
-                               <option value="Size 2">Size 2</option>
-                               <option value="Size 3">Size 3</option>
+                               <option value="8x10">8 x 10</option>
+                               <option value="11x14">11 x 14</option>
+                               <option value="12x12">12 x 12</option>
+                               <option value="16x20">16 x 20</option>
+                               <option value="na">N/A</option>
                                
                            </select>
                            
                            <label for="message">Message:</label>
-                           <textarea name="message" placeholder="Describe what you're wanting a little bit."></textarea>
+                           <textarea name="message" placeholder="Describe what you're wanting a little bit." id="message" required></textarea>
                            
-                           <input type="submit" value="Get in touch!">
+                           <input type="submit" value="Get in touch!" id="submitBtn">
                            
                        </form>
+                       
+                       <p id="successMsg"></p>
                        
                    </div>
                    
                </div>
+               
+               
                
            </div>
            
@@ -122,6 +187,13 @@
             </div>
             
             <i class="fa fa-close infoClose"></i>
+            
+            <div class="optClose">
+                
+                <div class="line"></div>
+                <div class="line"></div>
+                
+            </div>
             
         </section>
         
@@ -150,7 +222,7 @@
                
             <i class="fa fa-close" id="close"></i>
                 
-            <h2 id="artTitle">Love</h2>
+            <h2 id="artTitle"></h2>
             
             <div class="artBox">
                 
