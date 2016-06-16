@@ -1,6 +1,7 @@
-Colorful Language
+Dani Reser Photography
 ===
 
+-Utlizes AJAX
 -Features photography in a gallery
 -Utilizes Lightbox
 -Reponsive
