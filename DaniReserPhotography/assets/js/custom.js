@@ -29,11 +29,12 @@ function menuChoice(choice) {
     
     var page = choice;
     $("li").removeClass("active");
-    $("#content, .activePage").fadeOut(500);
+    $("#content, #footer").fadeOut(500);
     
     setTimeout(function() {
         $.get(page + ".html", function(data){
             $("#content").html(data).fadeIn(500);
+            $("#footer").fadeIn(500);
         });
     }, 500);
     
@@ -73,14 +74,14 @@ $(".naviMenu").find("li").click(function() {
 
 $(".home").click(function() {
     
-    menuChoice("Home");
+    menuChoice("home");
     $(".home").addClass("active");
     
 });
 
 $(".family").click(function() {
     
-    menuChoice("Family");
+    menuChoice("family");
     $(".family").addClass("active");
     
 });
