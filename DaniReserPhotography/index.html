@@ -13,6 +13,9 @@
         <!-- Animate.css -->
         <link href="assets/css/animate.css-master/animate.min.css" rel="stylesheet">
         
+        <!-- Lightbox -->
+        <link href="assets/css/lightbox.css" rel="stylesheet">
+        
         <!-- Font Awesome -->
         <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         
@@ -42,11 +45,11 @@
             
             <ul class="naviBar">
                 
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="family.html">Family</a></li>
-                <li><a href="wedding.html">Wedding</a></li>
-                <li><a href="event.html">Event</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="active home">Home</li>
+                <li class="family">Family</li>
+                <li class="wedding">Wedding</li>
+                <li class="event">Event</li>
+                <li class="contact">Contact</li>
                 
             </ul>
             
@@ -56,11 +59,12 @@
                 
                 <ul class="naviMenu">
                 
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="family.html">Family</a></li>
-                    <li><a href="wedding.html">Wedding</a></li>
-                    <li><a href="event.html">Event</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active home">Home</li>
+                    <li class="family">Family</li>
+                    <li class="wedding">Wedding</li>
+                    <li class="event">Event</li>
+                    <li class="contact">Contact</li>
+                    
 
                 </ul>
                 
@@ -69,33 +73,15 @@
         </section>
         
         <div class="line"></div>
+        <div id="loadingDiv"><img src="assets/img/ajax-loader.gif" alt="Loading..." title="Loading..."></div>
         
-        <!-- COVERPHOTO
-        =============================================== -->
+        <div id="content">
+           
+           <div id="loadingDiv"><img src="assets/img/ajax-loader.gif" alt="Loading..." title="Loading..."></div>
+            
+        </div>
         
-        <section id="coverPhoto">
-            
-            <div class="coverImgWrapper">
-                
-                <img src="assets/img/person.png" alt="" class="coverImg">
-                
-            </div>
-            
-        </section>
-        
-        <!-- ABOUT
-        =============================================== -->
-        
-        <section id="about">
-            
-            <div class="container">
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id enim asperiores, quia temporibus, est maiores eius omnis eveniet totam esse saepe quis, modi! Dignissimos fuga culpa autem, quo voluptate possimus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus, amet sed. Atque, tenetur et blanditiis iste porro repellendus quia ipsa sapiente molestias consequuntur ut iure praesentium perspiciatis debitis, consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quibusdam sapiente temporibus! Ullam laudantium numquam fuga quaerat tenetur non illum esse accusamus eveniet, molestiae qui est natus dolore dolorum inventore.</p>
-                
-            </div>
-            
-        </section>
-        
+        <div class="clear"></div>
         <div class="line"></div>
         
         <!-- FOOTER
@@ -113,6 +99,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Lightbox -->
+        <script src="assets/js/lightbox.js"></script>
         <!-- Custom -->
         <script src="assets/js/custom.js"></script>
         
