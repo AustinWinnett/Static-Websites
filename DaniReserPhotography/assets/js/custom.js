@@ -29,12 +29,12 @@ function menuChoice(choice) {
     
     var page = choice;
     $("li").removeClass("active");
-    $("#content, #footer").fadeOut(500);
+    $("#content, #footer, .bottomLine").fadeOut(500);
     
     setTimeout(function() {
         $.get(page + ".html", function(data){
             $("#content").html(data).fadeIn(500);
-            $("#footer").fadeIn(500);
+            $("#footer, .bottomLine").fadeIn(500);
         });
     }, 500);
     
